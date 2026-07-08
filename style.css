@@ -1,0 +1,142 @@
+:root{
+  --bordo:#7a0f18;
+  --negro:#111111;
+  --gris:#f5f5f5;
+  --texto:#222;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(180deg,#ffffff 0%,#fafafa 100%);
+  color:var(--texto);
+}
+
+.hero{
+  text-align:center;
+  padding:60px 20px 40px;
+}
+
+.logo{
+  width:140px;
+  margin:0 auto 20px;
+  display:block;
+}
+
+.hero h1{
+  font-size:clamp(2rem,5vw,4rem);
+  color:var(--bordo);
+  margin-bottom:10px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.hero p{
+  color:#555;
+  font-size:1.1rem;
+  margin-bottom:20px;
+}
+
+.contador{
+  display:inline-block;
+  background:var(--bordo);
+  color:#fff;
+  padding:10px 20px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.container{
+  max-width:1400px;
+  margin:0 auto;
+  padding:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.card{
+  position:relative;
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  box-shadow:0 8px 30px rgba(0,0,0,.08);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 40px rgba(0,0,0,.14);
+}
+
+.tag{
+  position:absolute;
+  top:16px;
+  left:16px;
+  background:var(--bordo);
+  color:#fff;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:.8rem;
+  font-weight:700;
+  z-index:2;
+}
+
+.img-wrap{
+  background:#fff;
+  aspect-ratio:1/1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+}
+
+.img-wrap img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  transition:transform .3s ease;
+}
+
+.card:hover img{
+  transform:scale(1.06);
+}
+
+.info{
+  padding:22px;
+  border-top:1px solid #eee;
+}
+
+.info h3{
+  font-size:1.1rem;
+  margin-bottom:14px;
+  color:var(--negro);
+  min-height:48px;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--bordo);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:14px;
+  font-weight:700;
+  transition:background .2s ease;
+}
+
+.card:hover .btn{
+  background:#5e0c13;
+}
+
+.footer{
+  text-align:center;
+  padding:50px 20px;
+  color:#666;
+  font-size:.95rem;
+}
