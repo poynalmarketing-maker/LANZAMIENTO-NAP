@@ -25,9 +25,9 @@ const productos = [
     "link": "https://poynal.com.ar/producto/nap-cp6y8p/"
   },
   {
-    "nombre": "NAP-CP015P",
+    "nombre": "NAP-CP015A",
     "imagen": "https://poynal.com.ar/wp-content/uploads/2026/07/Diseno-sin-titulo-60-1.png",
-    "link": "https://poynal.com.ar/producto/nap-cp015p/"
+    "link": "https://poynal.com.ar/producto/nap-cp015a/"
   },
   {
     "nombre": "NAP-CP586P",
